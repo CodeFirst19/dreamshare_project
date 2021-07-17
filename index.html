@@ -1,0 +1,186 @@
+
+<!-- Author: Kamogelo Mokgwatjane
+
+The webpage is divided into five folders
+  html folder to include all the html files
+  Css for all the stylesheet files, a styling file is a css file contains css code for styling this webpage
+  fonts folder is for fonts, however, not used, but always icluded in case a need for it arise
+  js folder for all javascript files
+  asset forlder contains all the images and icons used on thi swebpage
+  preview folder contains a picture on how this webpage should look like -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+    <link rel="stylesheet" href="css/styling.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- Webpage title -->
+    <title>DREAMSHARE</title>
+  </head>
+</head>
+<body>
+  <!-- Bootstrap div container class for entire webpage body-->
+  <div id="main-container" class="container pt-4 pb-3">
+    <!-- The webpage is divided in sections containing each part -->
+    <!-- Section A, containing a nav-bar and the top backgound image -->
+    <section id="section-a">
+      <div id="background-img" class="">
+        <div id="bg-image"></div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <a class="navbar-brand font-weight-bold text-white" href="#">DREAMSHARE</a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-bold">
+              <li class="nav-item mr-3">
+                <a class="nav-link text-white" href="#">Activities <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-white" href="#">Partners <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-white" href="#">Blog <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link text-white" href="#">Contact <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-4">
+                <a class="nav-link text-white" href="#">Log in <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="sign-up-btn btn btn-outline-light my-2 my-sm-0" type="submit">Sign up</button>
+            </form>
+          </div>
+        </nav>
+        <h2 class="font-weight-bold mb-md-4">SHARE YOUR<br>HOLIDAY DREAM</h2>
+        <p class="backgroung-img-text">And find the perfect partner to fulfill it</p>
+        <a id="" class="btn read-more-btn font-weight-bold mt-3" href="#" role="button">Find your holiday partner</a>
+      </div>
+    </section>
+    <!-- section B -->
+    <section id="section-b">
+      <div class="content-wrap">
+        <h3 class="content-title font-weight-bold mb-3">Meet a partner for your best holiday</h3>
+      </div>
+    </section>
+    <!-- Section C, containing partners images and svg icons -->
+    <!-- The section uses bootstrap grid layout for good webpage responsiveness -->
+    <section id="section-c">
+      <div class="row">
+        <div class="col-md-3 position-relative">
+          <img class="image1 rounded-circle m-auto mb-3" src="assets/partner1.jpg" alt="">
+          <img class="music-svg-icon img-fluid bg-danger" src="assets/music.svg" alt="">
+          <h6 class="font-weight-bold mt-3">Bradley Hunter</h6>
+          <p class="partners-hobbies-par">Based in Chicago. I love playing tennis and loud music.</p>
+        </div>
+        <div class="col-md-3 position-relative">
+          <img class="image2 rounded-circle m-auto mb-3" src="assets/partner2.jpg" alt="">
+          <img class="brush-svg-icon img-fluid bg-success" src="assets/brush.svg" alt="">
+          <h6 class="font-weight-bold mt-3">Marie Bennet</h6>
+          <p class="partners-hobbies-par">Currently living in Colorado. Lover of art, languages and travelling.</p>
+        </div>
+        <div class="col-md-3 position-relative">
+          <img class="image3 rounded-circle m-auto mb-3" src="assets/partner3.jpg" alt="">
+          <img class="camera-svg-icon img-fluid bg-warning" src="assets/camera.svg" alt="">
+          <h6 class="font-weight-bold mt-3">Diana Wells</h6>
+          <p class="partners-hobbies-par">Living in Athens, Greece. I love black and white classics, chillout music and green tea.</p>
+        </div>
+        <div class="col-md-3 position-relative">
+          <img class="image4 rounded-circle m-auto mb-3" src="assets/partner4.jpg" alt="">
+          <img class="airplane-svg-icon img-fluid bg-primary" src="assets/airplane.svg" alt="">
+          <h6 class="font-weight-bold mt-3">Christopher Pierce</h6>
+          <p class="partners-hobbies-par">Star Wars fanatic. I have a persistent enthusiasm to create new things</p>
+        </div>
+      </div>
+      <button class="see-other-partners-btn btn btn-outline-danger font-weight-bold mt-3" type="button">See other partners</button>
+    </section>
+    <!-- Section D, containing images blocks, uses bootstrap grid layout -->
+    <section id="section-d" class="mt-5">
+      <h3 class="font-weight-bold">Discover holiday activity ideas</h2>
+      <div id="images" class="w-75 m-auto">
+        <!-- Row 1 -->
+        <div class="row mt-3">
+          <div class="col-md-4 position-relative">
+            <img class="block-images imgblock1" src="assets/block1Sports.jpg" alt="">
+            <label class="sport-img-blog font-weight-bold text-capitalize">Sports</label>
+          </div>
+          <div class="col-md-4 position-relative">
+            <img class="block-images imgblock2" src="assets/block2Wellness.jpg" alt="">
+            <label class="wellness-img-blog font-weight-bold text-capitalize text-white">Wellness and health</label>
+          </div>
+          <div class="col-md-4 position-relative">
+            <img class="block-images imgblock3" src="assets/block3Expeditions.jpg" alt="">
+            <label class="block-images-description font-weight-bold text-capitalize text-white">Expeditions</label>
+          </div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="row mt-2">
+          <div class="col-md-4 position-relative">
+            <img class="block-images imgblock4" src="assets/block4Games.jpg" alt="">
+            <label class="block-images-description font-weight-bold text-capitalize text-white">Games</label>
+          </div>
+          <div class="col-md-8 position-relative">
+            <img class="block-images imgblock5" src="assets/block5Culture.jpg" alt="">
+            <label class="block-images-description font-weight-bold text-capitalize text-white">Culture and education</label>
+          </div>
+        </div>
+        <!-- ROW 3 -->
+        <div class="row mt-2">
+          <div class="col-md-8 position-relative">
+            <img class="block-images imgblock6" src="assets/block6Beauty.jpg" alt="">
+            <label class="block-images-description font-weight-bold text-capitalize text-white">Beauty and relaxation</label>
+          </div>
+          <div class="col-md-4 position-relative">
+            <img class="block-images imgblock7" src="assets/block7Travelling.jpg" alt="">
+            <label class="block-images-description font-weight-bold text-capitalize text-white">Travelling</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- A diving red line between main body contents and footer -->
+    <hr class="bg-danger mt-4"/>
+    <!-- Section E, containing footer, uses bootstrap grid layout -->
+    <section id="section-e" class="mt-4">
+     <div class="row">
+       <div class="col-md-3">
+         <h6 class="font-weight-bold text-danger">DREAMSHARE</h5>
+       </div>
+       <div class="col-md-3 text-left">
+         <h6 class="font-weight-bold">Company</h5>
+          <a class="mb-2" href="#">About</a><br/>
+          <a class="mb-2" href="#">Contact</a><br/>
+          <a class="mb-2" href="#">Press</a><br/>
+          <a class="mb-2" href="#">Blog</a><br/>
+          <a class="mb-2" href="#">Terms and Privacy</a><br/>
+          <a href="#">Help</a>
+      </div>
+      <div class="col-md-3 text-left">
+         <h6 class="font-weight-bold">Activities</h5>
+          <a class="mb-2" href="#">Sports</a><br/>
+          <a class="mb-2" href="#">Wellness and Health</a><br/>
+          <a class="mb-2" href="#">Expeditions</a><br/>
+          <a class="mb-2" href="#">Games</a><br/>
+          <a class="mb-2" href="#">Culture and Education</a><br/>
+          <a class="text-danger" href="#">View all</a>
+      </div>
+      <div class="col-md-3 text-left">
+         <h6 class="font-weight-bold">Contact us</h6>
+         <a class="mb-2" href="#">Tell: (000) 000-0000</a><br/>
+         <a href="#">Email: dreamshare@email.com</a>
+      </div>
+     </div>
+    </section>
+  </div>
+  <!-- End of div containter class -->
+</body>
+</html>
